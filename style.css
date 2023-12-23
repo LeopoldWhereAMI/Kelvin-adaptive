@@ -1,0 +1,289 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Header */
+
+.header {
+    background-color: #F1F1F1;
+}
+
+.container {
+    max-width: 1039px;
+    padding: 0 15px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header__logo {
+    margin-top: 46px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.header__nav a {
+    color: #000;
+}
+/* Burger */
+
+
+
+.menu-burger {
+    width: 45px;
+    height: 20px;
+    margin-top: 46px;
+    display: flex;
+    display: none;
+    cursor: pointer;
+    border: none;
+    align-items: center;
+    /* position: relative;
+    z-index: 5; */
+}
+
+.menu-burger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: relative;
+    transition: .2s;
+    
+}
+
+.menu-burger span::before,
+.menu-burger span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 4px;
+    right: 0;
+    background-color: black;
+    transition: .2s;
+    
+} 
+
+.menu-burger span::before {
+    top: -8px;
+}
+
+.menu-burger span::after {
+    bottom: -8px;
+}
+
+.menu-burger.active span {
+    background-color: transparent;
+    margin-top: 46px;
+}
+
+.menu-burger.active span::before {
+    top: 0;
+    transform: rotate(45deg);
+
+} 
+
+.menu-burger.active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title h1 {
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 203px;
+}
+
+.header__title p {
+    line-height: 200%;
+}
+
+.header__img {
+    margin-top: 76px;
+    height: auto;
+}
+
+.header__img img {
+    margin-bottom: -5px;
+}
+
+/* Section */
+
+.section__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__design, .section__development, .section__testing {
+    margin: 90px 0px;
+}
+
+
+.section__design-txt h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section__design-txt p {
+    line-height: 200%;
+}
+
+.section__development-txt h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section__development-txt p {
+    line-height: 200%;
+}
+
+.section__testing-txt h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section__testing-txt p {
+    line-height: 200%;
+}
+
+/* Portfolio */
+
+.portfolio {
+    background-color: #F1F1F1;
+    padding-bottom: 90px;
+    padding-top: 90px;
+    text-align: center;
+}
+
+.portfolio__title {
+    margin-top: 90px;
+    margin-bottom: 70.33px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.levis__txt {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.portfolio__reebok {
+    margin-top: 90px;
+}
+
+.reebok__txt {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.portfolio__braun {
+    margin-top: 90px;
+}
+
+.braun__txt {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+.footer__title {
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.footer__txt {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.footer__btn {
+    text-align: center;
+    margin-top: 40px;
+    
+    
+}
+
+.footer__btn button {
+    width: 180.5px;
+    height: 42px;
+    color: white;
+    font-size: 18px;
+    background-color: #070707;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+
+.footer__icons {
+    margin-top: 80.22px;
+    display: flex;
+    justify-content: center;
+    gap: 62px;
+}
+
+.footer__desc {
+    text-align: center;
+    margin-top: 40.78px;
+    margin-bottom: 90px;
+    color: #828282;
+}
+
+
+
+

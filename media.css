@@ -1,0 +1,188 @@
+
+/* От 1200 до 1439 */
+@media(max-width: 1439px){
+
+}
+
+/* От 992 до 1199 */
+@media(max-width: 1199px){
+
+    .header__title p br {
+        display: none;
+    }
+    
+}
+
+/* От 768 до 991 */
+@media(max-width: 991px) {
+
+    /* .header__title p br {
+        display: none;
+    } */
+   
+    /* Section */
+    .section__cards {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    /* Portfolio */
+    .portfolio__title {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .portfolio__levis img {
+        height: auto;
+        width: 100%;
+    }
+
+    .portfolio__reebok img {
+        height: auto;
+        width: 100%
+    }
+
+    .portfolio__braun img {
+        height: auto;
+        width: 100%
+    }
+
+    .levis__txt, .reebok__txt, .braun__txt {
+        margin-top: 0px;
+    }
+
+    /* Footer */
+    .footer__title {
+        margin-top: 60px;
+        
+    }
+
+    .footer__txt {
+        margin-top: 20px;
+    }
+
+    .footer__btn {
+        margin-top: 20px;
+    }
+
+    .footer__icons {
+        margin-top: 64px;
+    }
+
+    .footer__desc {
+        margin-top: 20.78px;
+    }
+
+    
+}
+
+/* От 360 до 767 */
+@media(max-width: 767px){
+
+    .container {
+        width: 345px;
+    }
+
+    .header__nav li {
+        font-size: 34px;
+        font-weight: 600;
+        
+    }
+
+    .header__nav a {
+        color: #828282;
+    }
+
+    .header__nav a:hover {
+        color: #090909;
+    }
+
+    .header__content {
+        display: block;
+    }
+
+    .header__title h1 {
+        margin-top: 50px;
+    }
+
+    .header__title p br {
+        display: none;
+    }
+
+    /* Burger */
+    .menu-burger {
+        display: flex;
+    }
+
+    .header__nav-wrapper {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, .6);
+        justify-content: flex-end;
+        
+    }
+
+    .header__nav-wrapper.active {
+        display: flex;
+        
+        padding-top: 0px;
+
+    }
+
+    .header__nav {
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        max-width: 375px;
+        padding: 40px;
+    }
+
+    .header__title h1 {
+        font-size: 34px;
+    }
+
+    .header__title-media {
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .header__img img {
+        width: 296px;
+        
+    }
+
+    /* Section */
+    .section__cards {
+        text-align: start;
+    }
+
+    .section__cards br {
+        display: none;
+    }
+    
+    
+
+    /* Portfolio */
+
+    .portfolio {
+        padding-top: 60px;
+    }
+
+    .portfolio__title {
+        margin-top: 0;
+        
+    }
+
+    /* Footer */
+    .footer__icons {
+        gap: 51.89px;
+    }
+}
+
+
+
